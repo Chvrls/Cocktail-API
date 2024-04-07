@@ -1,0 +1,33 @@
+/*GENERALS*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(16, 16, 43);
+}
+
+/*HEADER*/
+.header {
+  background-color: rgb(6, 6, 66);
+  display: flex;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: Poppins;
+  color: white;
+  padding-left: 24px;
+}
