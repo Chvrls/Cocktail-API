@@ -6,6 +6,9 @@
 
 body {
   background-color: rgb(16, 16, 43);
+  height: 3000px;
+  padding-top: 120px;
+  font-family: Poppins, Arial;
 }
 
 /*HEADER*/
@@ -19,6 +22,7 @@ body {
   left: 0;
   right: 0;
   height: 80px;
+  z-index: 100;
 }
 
 .logo {
@@ -27,7 +31,17 @@ body {
 }
 
 .logo h1 {
-  font-family: Poppins;
   color: white;
   padding-left: 24px;
+}
+
+.main-info {
+  margin-left: 40px;
+}
+
+.main-info h3 {
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+
 }
