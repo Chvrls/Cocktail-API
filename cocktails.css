@@ -9,6 +9,7 @@ body {
   height: 3000px;
   padding-top: 120px;
   font-family: Poppins, Arial;
+  color: white;
 }
 
 /*HEADER*/
@@ -44,4 +45,27 @@ body {
   font-style: italic;
   color: white;
 
+}
+/*MAIN CONTENT / GRID*/
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 60px;
+  margin-inline: 100px;
+  margin-top: 70px;
+  padding: 40px 40px 40px 40px;
+  background-color: rgb(6, 6, 66);;
+  box-shadow: inset 1px 1px 11px 1px #545454;
+}
+
+.drink-img {
+  width: 100%;
+}
+
+
+.drink-middle-grid,
+.drink-left-grid,
+.drink-right-grid p, h4{
+  font-size: 12px;
 }
