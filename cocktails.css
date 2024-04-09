@@ -69,3 +69,7 @@ body {
 .drink-right-grid p, h4{
   font-size: 12px;
 }
+
+.drink-left-grid {
+  max-width: 300px;
+}

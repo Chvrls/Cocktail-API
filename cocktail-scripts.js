@@ -14,33 +14,72 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
 
       <div class="drink-info">
         <h4>Name: ${drink.strDrink} </h4>
-        <p>Category: Coffee / Tea</p>
-        <p>Alcohol: Non-Alcoholic</p>
-        <p>Glass: Coffee mug</p>
+        <p>Drink Alternate: ${drink.strDrinkAlternate} </p>
+        <p>Tags: ${drink.strTags}</p>
+        <p>Video: <a href=${drink.strVideo}>Link</a> </p>
+        <p>Category: ${drink.strCategory}</p>
+        <p>IBA: ${drink.strIBA}</p>
+        <p>Alcohol: ${drink.strAlcoholic}</p>
+        <p>Glass: ${drink.strGlass}</p>
       </div>
     </div>
 
     <div class="drink-middle-grid">
       <h4>Instructions</h4>
-      <p>Brew espresso. In a coffee mug, place 1 teaspoon of unsweetened powdered cocoa, then cover a teaspoon with honey and drizzle it into the cup. Stir while the coffee brews, this is the fun part. The cocoa seems to coat the honey without mixing, so you get a dusty, sticky mass that looks as though it will never mix. Then all at once, presto! It looks like dark chocolate sauce. Pour hot espresso over the honey, stirring to dissolve. Serve with cream.</p>
+      <p>${drink.strInstructions}</p>
+
+      <h4>InstructionsES</h4>
+      <p>${drink.strInstructionsES}</p>
 
       <h4>InstructionsDE</h4>
-      <p>Espresso zubereiten. In eine Kaffeetasse 1 Teelöffel ungesüßten, pulverisierten Kakao geben, dann einen Teelöffel Honig in die Tasse träufeln. Rühren Sie um, während der Kaffee brüht, das ist der lustige Teil. Der Kakao scheint den Honig ohne Mischen zu überziehen, so dass Sie eine dichte, klebrige Masse erhalten, die aussieht, als würde sie sich nie vermischen. Dann auf einmal, presto! Es sieht aus wie dunkle Schokoladensoße. Heißen Espresso über den Honig gießen und unter Rühren auflösen. Mit Sahne servieren."</p>
+      <p>${drink.strInstructionsDE}</p>
+
+      <h4>InstructionsFR</h4>
+      <p>${drink.strInstructionsFR}</p>
 
       <h4>InstructionsIT</h4>
-      <p>Prepara l'espresso.\r\nIn una tazza da caffè, mettete 1 cucchiaino di cacao amaro in polvere, quindi coprite un cucchiaino con del miele e versatelo nella tazza.\r\nMescola mentre il caffè si prepara, questa è la parte divertente.\r\nIl cacao sembra ricoprire il miele senza mescolarsi, quindi si ottiene una massa polverosa e appiccicosa che sembra non si mescolerà mai.\r\nVersare l'espresso caldo sul miele, mescolando per scioglierlo.\r\nServire con la panna.</p>
+      <p>${drink.strInstructionsIT}</p>
     </div>
 
     <div class="drink-right-grid">
       <h4>Ingredients:</h4>
-      <p>Espresso</p>
-      <p>Honey</p>
-      <p>Cocoa powder</p>
+      <p>${drink.strIngredient1}</p>
+      <p>${drink.strIngredient2}</p>
+      <p>${drink.strIngredient3}</p>
+      <p>${drink.strIngredient4}</p>
+      <p>${drink.strIngredient5}</p>
+      <p>${drink.strIngredient6}</p>
+      <p>${drink.strIngredient7}</p>
+      <p>${drink.strIngredient8}</p>
+      <p>${drink.strIngredient9}</p>
+      <p>${drink.strIngredient10}</p>
+      <p>${drink.strIngredient11}</p>
+      <p>${drink.strIngredient12}</p>
+      <p>${drink.strIngredient13}</p>
+      <p>${drink.strIngredient14}</p>
+      <p>${drink.strIngredient15}</p>
       <h4>Measures:</h4>
-      <p>Unsweetened</p>
-      <h4>Creative Commons: No</h4>
+      <p>${drink.strMeasure1}</p>
+      <p>${drink.strMeasure2}</p>
+      <p>${drink.strMeasure3}</p>
+      <p>${drink.strMeasure4}</p>
+      <p>${drink.strMeasure5}</p>
+      <p>${drink.strMeasure6}</p>
+      <p>${drink.strMeasure7}</p>
+      <p>${drink.strMeasure8}</p>
+      <p>${drink.strMeasure9}</p>
+      <p>${drink.strMeasure10}</p>
+      <p>${drink.strMeasure11}</p>
+      <p>${drink.strMeasure12}</p>
+      <p>${drink.strMeasure13}</p>
+      <p>${drink.strMeasure14}</p>
+      <p>${drink.strMeasure15}</p>
+
+      <h4>Image Source: <a href=${drink.strImageSource}>Link</a> </h4>
+      <h4>Image Attribution: <a href=${drink.strImageAttribution}>Link</a> </h4>
+      <h4>Creative Commons: ${drink.strCreativeCommonsConfirmed}</h4>
       <h4>Date Modified:</h4>
-      <p>2015-09-03 03:32:59</p>
+      <p>${drink.dateModified}</p>
     </div>
   </div>`
     })
