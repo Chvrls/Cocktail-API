@@ -1,8 +1,10 @@
 fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
   .then(response => response.json())
   .then(res => {
+
     const data = res.drinks;
     let drinkHTML = '';
+    
     data.forEach(drink => {
       drinkHTML += `
       <div class="container">
@@ -83,7 +85,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
     </div>
   </div>`
     })
-    console.log(drinkHTML)
+    //console.log(drinkHTML)
     document.querySelector('.drink-grid').innerHTML = drinkHTML;
    })
   .catch(error => console.log(error));
