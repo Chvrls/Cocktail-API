@@ -50,7 +50,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   column-gap: 60px;
   margin-inline: 100px;
   margin-top: 70px;
@@ -61,16 +61,21 @@ body {
 }
 
 .drink-img {
-  width: 100%;
+  width: 300px
 }
 
 
 .drink-middle-grid,
 .drink-left-grid,
-.drink-right-grid p, h4{
+.drink-right-ingredients-grid,
+.drink-right-measures-grid p, h4{
   font-size: 12px;
 }
 
 .drink-left-grid {
   max-width: 300px;
+}
+
+.drink-right-ingredients-grid {
+  margin-left: 100px;
 }

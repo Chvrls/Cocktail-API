@@ -43,7 +43,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
       <p>${drink.strInstructionsIT}</p>
     </div>
 
-    <div class="drink-right-grid">
+    <div class="drink-right-ingredients-grid">
       <h4>Ingredients:</h4>
       <p>${drink.strIngredient1}</p>
       <p>${drink.strIngredient2}</p>
@@ -60,6 +60,8 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
       <p>${drink.strIngredient13}</p>
       <p>${drink.strIngredient14}</p>
       <p>${drink.strIngredient15}</p>
+      </div>
+      <div class="drink-right-measures-grid">
       <h4>Measures:</h4>
       <p>${drink.strMeasure1}</p>
       <p>${drink.strMeasure2}</p>
