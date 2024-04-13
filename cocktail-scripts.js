@@ -85,7 +85,6 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=m')
     </div>
   </div>`
     })
-    //console.log(drinkHTML)
     document.querySelector('.drink-grid').innerHTML = drinkHTML;
    })
   .catch(error => console.log(error));
